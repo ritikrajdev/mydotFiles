@@ -1,0 +1,35 @@
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+
+# Ranger Configuration 
+alias rr=ranger
+function ranger {
+    local IFS=$'\t\n'
+    local tempfile="$(mktemp -t tmp.XXXXXX)"
+    local ranger_cmd=(
+        command
+        ranger
+        --cmd="map Q chain shell echo %d > "$tempfile"; quitall"
+    )
+    
+    ${ranger_cmd[@]} "$@"
+    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]]; then
+        cd -- "$(cat "$tempfile")" || return
+    fi
+    command rm -f -- "$tempfile" 2>/dev/null
+}
+
+# Adding adb to path !
+export PATH="$PATH:/home/ritik/Android/Sdk/platform-tools/"
+
+# Local Bin Path !
+export PATH="$PATH:/home/ritik/.local/bin"
+
+# Editor
+export EDITOR=vim
+
+# Grep Colorized Output
+alias grep='grep --colour=auto'
