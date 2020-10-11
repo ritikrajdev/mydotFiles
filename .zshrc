@@ -1,5 +1,5 @@
 
-source .shellrc
+source $HOME/.shellrc
 
 ## My Color Setup From Here !!
 
