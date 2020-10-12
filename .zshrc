@@ -20,7 +20,7 @@ PS1+=" "                 # Just a space !
 
 PS1+="%{$fg[blue]%}"     # Color Green
 
-PS1+="%~"                # Current Directory and a space
+PS1+="%c"                # Current Directory and a space
 
 PS1+="%b"                # Bold Off
 PS1+="%{$reset_color%}"  # Reset Color

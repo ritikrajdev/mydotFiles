@@ -6,5 +6,5 @@ Plug 'prettier/vim-prettier'
 
 call plug#end()
 
-set tabstop=4 shiftwidth=4 number
+set tabstop=4 shiftwidth=4 number 
 colorscheme nord

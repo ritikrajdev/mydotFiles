@@ -28,8 +28,10 @@ export PATH="$PATH:/home/ritik/Android/Sdk/platform-tools/"
 # Local Bin Path !
 export PATH="$PATH:/home/ritik/.local/bin"
 
-# Editor
-export EDITOR=vim
+# Default Editor is nvim Now
+export EDITOR=nvim
+alias vim=nvim
 
 # Grep Colorized Output
 alias grep='grep --colour=auto'
+
