@@ -4,6 +4,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'Rykka/riv.vim'
 
 call plug#end()
 
