@@ -40,3 +40,5 @@ if [[ ! "$SSH_AUTH_SOCK" ]]; then
         eval $(ssh-agent) > /dev/null
 fi
 
+# Kity view Image in Terminal
+alias icat="kitty +kitten icat"
