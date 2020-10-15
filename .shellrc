@@ -23,7 +23,7 @@ function ranger {
 }
 
 # Ranger Trial of Autocd
-source /usr/share/doc/ranger/examples/shell_automatic_cd.sh
+# source /usr/share/doc/ranger/examples/shell_automatic_cd.sh
 
 # Adding adb to path !
 export PATH="$PATH:/home/ritik/Android/Sdk/platform-tools/"
@@ -38,7 +38,7 @@ alias vim=nvim
 # Grep Colorized Output
 alias grep='grep --colour=auto'
 
-# Starting ssh-agent for each shell, but only if one is not already running
+# Github Starting ssh-agent for each shell, but only if one is not already running
 if [[ ! "$SSH_AUTH_SOCK" ]]; then
         eval $(ssh-agent) > /dev/null
 fi

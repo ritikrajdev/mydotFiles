@@ -1,4 +1,3 @@
-
 # Deafult PS1
 # PS1='[\u@\h \W]\$ '
 
@@ -14,3 +13,4 @@ shopt -s histappend
 # History
 HISTSIZE=50000
 HISTFILESIZE=500000
+
