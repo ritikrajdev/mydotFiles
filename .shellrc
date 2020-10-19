@@ -22,9 +22,6 @@ function ranger {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
-# Ranger Trial of Autocd
-# source /usr/share/doc/ranger/examples/shell_automatic_cd.sh
-
 # Adding adb to path !
 export PATH="$PATH:/home/ritik/Android/Sdk/platform-tools/"
 
@@ -58,3 +55,4 @@ alias ll="exa -l"
 
 # Alias for tree command
 alias tree="tree -C"
+
