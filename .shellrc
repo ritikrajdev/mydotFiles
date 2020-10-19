@@ -53,3 +53,8 @@ if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|kitty$' ]]; then
 fi    
 # }}}
 
+# Alis for long listing format
+alias ll="exa -l"
+
+# Alias for tree command
+alias tree="tree -C"
