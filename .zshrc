@@ -7,26 +7,39 @@ autoload -U colors && colors
 
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-PS1="%B"                 # Make Bold
-PS1+="%{$fg[green]%}"    # Color Green
+PS1="%B"                   # Make Bold
+PS1+="%{$fg[green]%}"      # Color Green
 
-PS1+="%n"                # Username
-PS1+="@"                 # Simple @ symbol
-PS1+="%M"                # Hostname and a space
+PS1+="%n"                  # Username
+PS1+="@"                   # Simple @ symbol
+PS1+="%M"                  # Hostname and a space
 
-PS1+="%{$reset_color%}"  # Reset Color
+PS1+="%{$reset_color%}"    # Reset Color
 
-PS1+=" "                 # Just a space !
+PS1+=" "                   # Just a space !
 
-PS1+="%{$fg[blue]%}"     # Color Green
+PS1+="%{$fg[blue]%}"       # Color Green
 
-PS1+="%c"                # Current Directory and a space
+PS1+="%c"                  # Current Directory and a space
 
-PS1+="%b"                # Bold Off
-PS1+="%{$reset_color%}"  # Reset Color
+PS1+="%b"                  # Bold Off
+PS1+="%{$reset_color%}"    # Reset Color
 
 PS1+=" : "
 
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '%b'
+
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+
+RPROMPT="%{$fg[magenta]%}" # Color Magenta 
+RPROMPT+=\$vcs_info_msg_0_
+RPROMPT+="%{$reset_color%}" # Reset Color
 
 ########################################################################################################################
 #
