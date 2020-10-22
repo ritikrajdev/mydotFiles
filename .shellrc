@@ -56,3 +56,20 @@ alias ll="exa -l"
 # Alias for tree command
 alias tree="tree -C"
 
+# Java Things for Flutter
+export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
+export ANDROID_SDK_ROOT='/opt/android-sdk'
+export CHROME_EXECUTABLE='/usr/bin/chromium'
+
+##- pyenv
+## Initialising pyenv, done after initialising conda so that pyenv controls the python path
+eval "$(pyenv init -)"
+
+## Alias for reinitialising pyenv again in case conda wrests absolute control
+alias pyenvi="eval '$(pyenv init -)'"
+
+## Alias for pyenv which python
+alias pyenvw="pyenv which python"
+##
+
