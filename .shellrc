@@ -60,7 +60,7 @@ fi
 alias ll="exa -lg"
 
 # Alias for tree command
-alias tree="tree -C"
+alias tree="exa --tree"
 
 # Grep to RipGrep
 alias grep="rg"
