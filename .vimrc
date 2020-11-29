@@ -18,7 +18,6 @@ Plug 'Rykka/riv.vim'
 call plug#end()
 
 set tabstop=4 shiftwidth=4 number 
-colorscheme nord
 
 " Coc Vim Python Linter
 let g:python3_host_prog = '/usr/bin/python3'
