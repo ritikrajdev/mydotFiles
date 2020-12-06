@@ -71,6 +71,9 @@ alias man="batman"
 # Alias for valgrind
 alias valgrindl='valgrind --track-origins=yes --leak-check=full --show-leak-kinds=all -s'
 
+# Alias for g++
+alias g++="g++ -std=c++14 -Wall"
+
 # ex - archive extractor
 # usage: ex <file>
 ex ()
@@ -95,3 +98,28 @@ ex ()
   fi
 }
 
+# Skim Search (cd or open up a file)
+skim()
+{
+	RESULT_DIR=$(sk)
+	if [ -f $RESULT_DIR ]
+	then
+		xdg-open $RESULT_DIR
+	elif [ -d $RESULT_DIR ]
+	then
+		cd $RESULT_DIR
+	fi
+}
+
+# Advent of Code Template
+adc ()
+{
+	cd ~/Documents/Code/Advent-Of-Code/
+	mkdir $1
+	cd $1
+	touch test.txt input.txt
+	cp ~/Documents/Code/Advent-Of-Code/.template-makefile Makefile
+	cp ~/Documents/Code/Advent-Of-Code/.template-cpp.cpp part1.cpp
+	cp ~/Documents/Code/Advent-Of-Code/.template-cpp.cpp part2.cpp
+	echo Done
+}
