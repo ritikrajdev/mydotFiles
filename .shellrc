@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -53,7 +54,7 @@ alias diff="diff --color"
 if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|kitty$' ]]; then    
         for wid in $(xdotool search --pid $PPID); do    
             xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done    
-fi    
+fi
 # }}}
 
 # Alis for long listing format
@@ -114,12 +115,19 @@ skim()
 # Advent of Code Template
 adc ()
 {
-	cd ~/Documents/Code/Advent-Of-Code/
-	mkdir $1
-	cd $1
-	touch test.txt input.txt
-	cp ~/Documents/Code/Advent-Of-Code/.template-makefile Makefile
-	cp ~/Documents/Code/Advent-Of-Code/.template-cpp.cpp part1.cpp
-	cp ~/Documents/Code/Advent-Of-Code/.template-cpp.cpp part2.cpp
+	AOC_FOLDER="$HOME/Documents/Code/Advent-Of-Code/"
+	FOLDER_NAME="${AOC_FOLDER}December"
+	FOLDER_NAME+=$1
+
+	mkdir -p $FOLDER_NAME
+
+	FOLDER_NAME+="/"
+
+	touch ${FOLDER_NAME}test.txt ${FOLDER_NAME}input.txt
+	cp ${AOC_FOLDER}.template-makefile ${FOLDER_NAME}Makefile
+	cp ${AOC_FOLDER}.template-cpp.cpp ${FOLDER_NAME}part1.cpp
+	cp ${AOC_FOLDER}.template-cpp.cpp ${FOLDER_NAME}part2.cpp
+
 	echo Done
 }
+

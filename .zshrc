@@ -12,13 +12,13 @@ PS1+="%{$fg[green]%}"      # Color Green
 
 PS1+="%n"                  # Username
 PS1+="@"                   # Simple @ symbol
-PS1+="%M"                  # Hostname and a space
+PS1+="%M"                  # Hostname
 
 PS1+="%{$reset_color%}"    # Reset Color
 
 PS1+=" "                   # Just a space !
 
-PS1+="%{$fg[blue]%}"       # Color Green
+PS1+="%{$fg[blue]%}"       # Color Blue
 
 PS1+="%c"                  # Current Directory and a space
 
