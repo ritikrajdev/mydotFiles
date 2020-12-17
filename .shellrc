@@ -124,7 +124,3 @@ adc ()
 	echo Done
 }
 
-custom_cd ()
-{
-	cd $1
-}
