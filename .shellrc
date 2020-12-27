@@ -95,26 +95,36 @@ ex ()
 # Skim Search (cd or open up a file)
 skim()
 {
-	result_dir=$(sk)
-	if [ -f $result_dir ]
+	local result_dir=$(sk)
+	if [ -f "$result_dir" ]
 	then
-		xdg-open $result_dir
-	elif [ -d $result_dir ]
+		xdg-open "$result_dir"
+	elif [ -d "$result_dir" ]
 	then
-		cd $result_dir
+		cd "$result_dir"
+
+		if [ -d "./venv" ]
+		then
+			source ./venv/bin/activate
+		fi
+
+	else
+		return 1
 	fi
+	
+	return 0
 }
 
 # Advent of Code Template
 adc ()
 {
-	aoc_folder="$HOME/Documents/Code/Advent-Of-Code/"
-	folder_name="${aoc_folder}December"
-	folder_name+=$1
+	local aoc_folder="$HOME/Documents/Code/Advent-Of-Code/"
+	local folder_name="${aoc_folder}December"
+	local folder_name+=$1
 
 	mkdir -p $folder_name
 
-	folder_name+="/"
+	local folder_name+="/"
 
 	touch "${folder_name}test.txt" "${folder_name}input.txt"
 	cp "${aoc_folder}.template-makefile" "${folder_name}Makefile"
@@ -123,4 +133,59 @@ adc ()
 
 	echo Done
 }
+
+pokemon()
+{
+	# Do not End with trailing /
+	local pokemon_directory="$HOME/Pictures/Pokemon"
+	local file_prefix="Pokemon"
+
+	if [ $# -eq 1 ]
+	then
+		if [ $1 = "install" ]
+		then
+			echo "Installing Pokemons !"
+			mkdir -p $pokemon_directory
+			echo "Made Directory"
+			
+			for (( i=1; i<=151 ; i++ ))
+			do
+				if [ -f "${pokemon_directory}/${file_prefix}${i}.png" ]
+				then
+					continue
+				else
+					curl -s "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png" > "${pokemon_directory}/${file_prefix}${i}.png"
+					echo "Installed Pokemon ${i} ..."
+				fi
+			done
+
+			echo "Installed"
+		else
+			return 1
+		fi
+
+	elif [ $TERM = "xterm-kitty" ]
+	then
+		# set number_of_pokemons to 151 if 152nd one doesn't exist u know who's 152 xD
+
+		local number_of_pokemons=152
+		local pokemon_number=$(( RANDOM % (number_of_pokemons + 1) )) 
+		
+		if [ -f "${pokemon_directory}/${file_prefix}${pokemon_number}.png" ]
+		then
+			kitty +kitten icat "${pokemon_directory}/${file_prefix}${pokemon_number}.png"
+		else
+			echo "Use following command to install pokemons :-"
+			echo "pokemon install"
+			return 1
+		fi
+	else
+		return 1
+	fi
+
+	return 0
+}
+
+# Django Alias
+alias pyma="python manage.py"
 
