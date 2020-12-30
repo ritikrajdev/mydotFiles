@@ -134,7 +134,7 @@ bindsym $mod+0 workspace number $ws10
 
 # Next and Previous Desktop Shortcuts
 bindsym ctrl+$mod+Right workspace next
-bindsym ctrl+$mod+Left workspace next
+bindsym ctrl+$mod+Left workspace prev
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
