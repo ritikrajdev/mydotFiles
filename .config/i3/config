@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -137,8 +138,8 @@ bindsym ctrl+$mod+Right workspace next
 bindsym ctrl+$mod+Left workspace prev
 
 # Move window to next workspace
-bindsym $mod+alt+Right move window to workspace next
-bindsym $mod+alt+Left move window to workspace left
+bindsym $mod+$alt+Right move window to workspace next
+bindsym $mod+$alt+Left move window to workspace left
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -232,7 +233,11 @@ bar {
 bindsym $mod+Shift+f exec --no-startup-id dolphin  
 
 # Shutdown
-bindsym $mod+alt+F4 exec --no-startup-id shutdown -P now
+bindsym $mod+$alt+F4 exec --no-startup-id shutdown -P now
 
 # Wallpaper
 exec --no-startup-id feh --bg-center /usr/share/wallpapers/ColdRipple/contents/images/1920x1080.jpg
+
+# Icons
+exec_always --no-startup-id exec i3-workspace-names-daemon
+
