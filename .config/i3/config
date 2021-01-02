@@ -200,7 +200,7 @@ exec --no-startup-id libinput-gestures-setup start
 # Did it on /etc/X11/xorg.conf.d/90-touchpad.conf
 
 # Screen Shot on Print button
-bindsym --release Print exec --no-startup-id import ~/Pictures/`date +"%F_%T"`.png
+bindsym --release Print exec --no-startup-id flameshot gui
 
 # Theme of i3 by https://github.com/dracula/i3 {
 # class                 border  bground text    indicator child_border
