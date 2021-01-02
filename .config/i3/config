@@ -197,8 +197,7 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id libinput-gestures-setup start
 
 # Enable Tap to click on i3
-exec --no-startup-id xinput set-prop 12 342 1
-exec --no-startup-id xinput set-prop 12 324 1
+# Did it on /etc/X11/xorg.conf.d/90-touchpad.conf
 
 # Screen Shot on Print button
 bindsym --release Print exec --no-startup-id import ~/Pictures/`date +"%F_%T"`.png
@@ -240,4 +239,7 @@ exec --no-startup-id feh --bg-center /usr/share/wallpapers/ColdRipple/contents/i
 
 # Icons
 exec_always --no-startup-id exec i3-workspace-names-daemon
+
+# Notification i3
+exec_always --no-startup-id dunst
 

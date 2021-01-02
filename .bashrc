@@ -8,8 +8,11 @@ PS1="\e[1;32m\u@\h\e[0m \e[0;34m\W\e[0m : "
 shopt -s histappend
 
 # History
-HISTSIZE=50000
-HISTFILESIZE=500000
+HISTSIZE=500000
+HISTFILESIZE=5000000
 
 # Sourcing actual Shell file !!
 source $HOME/.shellrc
+
+# Bash Auto COmpletions
+source /usr/share/bash-completion/bash_completion

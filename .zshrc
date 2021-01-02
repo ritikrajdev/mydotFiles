@@ -27,6 +27,10 @@ PS1+="%{$reset_color%}"    # Reset Color
 
 PS1+=" : "
 
+# Zsh Syntax Highlighting and auto Suggestion
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 ########################################################################################################################
 #
 # Git / Version Control
@@ -57,8 +61,8 @@ RPROMPT+="%{$reset_color%}" # Reset Color
 
 ## Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
-HISTSIZE=50000
-SAVEHIST=50000
+HISTSIZE=500000
+SAVEHIST=500000
 bindkey -e
 
 ## End of lines configured by zsh-newuser-install
