@@ -243,3 +243,6 @@ exec_always --no-startup-id exec i3-workspace-names-daemon
 # Notification i3
 exec_always --no-startup-id dunst
 
+# Konsole Shortcut
+bindsym ctrl+$alt+t exec --no-startup-id konsole
+

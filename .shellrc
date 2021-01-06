@@ -120,11 +120,11 @@ adc ()
 {
 	local aoc_folder="$HOME/Documents/Code/Advent-Of-Code/"
 	local folder_name="${aoc_folder}December"
-	local folder_name+=$1
+	folder_name+=$1
 
 	mkdir -p $folder_name
 
-	local folder_name+="/"
+	folder_name+="/"
 
 	touch "${folder_name}test.txt" "${folder_name}input.txt"
 	cp "${aoc_folder}.template-makefile" "${folder_name}Makefile"
@@ -168,8 +168,8 @@ pokemon()
 	then
 		# set number_of_pokemons to 151 if 152nd one doesn't exist u know who's 152 xD
 
-		local number_of_pokemons=152
-		local pokemon_number=$(( RANDOM % (number_of_pokemons + 1) )) 
+		local number_of_pokemons=$(ls -1 "${pokemon_directory}/" | wc -l)
+		local pokemon_number=$(( RANDOM % (number_of_pokemons) + 1 )) 
 		
 		if [ -f "${pokemon_directory}/${file_prefix}${pokemon_number}.png" ]
 		then
