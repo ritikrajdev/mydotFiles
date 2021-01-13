@@ -1,8 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-" Plugin for auto bracket/quotes close
-Plug 'jiangmiao/auto-pairs'
-
 " Plugin Main COC for lanuage
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -17,7 +14,5 @@ Plug 'Rykka/riv.vim'
 
 call plug#end()
 
-set tabstop=4 shiftwidth=4 number 
+set tabstop=4 shiftwidth=4 relativenumber number
 
-" Coc Vim Python Linter
-let g:python3_host_prog = '/usr/bin/python3'
