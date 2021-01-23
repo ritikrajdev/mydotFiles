@@ -16,3 +16,4 @@ source $HOME/.shellrc
 
 # Bash Auto COmpletions
 source /usr/share/bash-completion/bash_completion
+
