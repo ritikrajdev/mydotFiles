@@ -98,3 +98,4 @@ rehash_precmd() {
 
 add-zsh-hook -Uz precmd rehash_precmd
 ## End of lines added by compinstall
+#
