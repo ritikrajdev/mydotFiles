@@ -30,6 +30,7 @@ PS1+=" : "
 # Zsh Syntax Highlighting and auto Suggestion
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/
 
 ########################################################################################################################
 #
@@ -67,7 +68,7 @@ bindkey -e
 
 ## End of lines configured by zsh-newuser-install
 ## The following lines were added by compinstall
-zstyle :compinstall filename '/home/ritik/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 ## AutoCd
 setopt autocd

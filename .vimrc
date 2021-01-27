@@ -18,7 +18,13 @@ Plug 'turbio/bracey.vim'
 " Plugin for Colors Vim
 Plug 'chrisbra/Colorizer'
 
+" Vim Comments
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 set tabstop=4 shiftwidth=4 relativenumber number
+
+" Auto Start show Color for Colorizer Plugin
+let g:colorizer_auto_color=1
 
