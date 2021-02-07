@@ -66,6 +66,10 @@ HISTSIZE=500000
 SAVEHIST=500000
 bindkey -e
 
+## Lines for forward and Backward word
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
 ## End of lines configured by zsh-newuser-install
 ## The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'

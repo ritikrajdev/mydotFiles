@@ -227,6 +227,7 @@ bar {
 			binding_mode       #FF5555 #FF5555 #F8F8F2
 		}
 }
+
 # }
 
 # Open File Manager Shortcut
@@ -246,4 +247,10 @@ exec_always --no-startup-id dunst
 
 # Konsole Shortcut
 bindsym ctrl+$alt+t exec --no-startup-id konsole
+
+# No Border of Window
+default_border none
+
+# Kde Polkit enable 
+exec_always --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 
