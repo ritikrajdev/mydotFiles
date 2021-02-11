@@ -3,5 +3,6 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-export GPG_TTY=$(tty)
+
+source ~/.profile
 

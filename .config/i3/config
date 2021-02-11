@@ -237,7 +237,11 @@ bindsym $mod+Shift+f exec --no-startup-id dolphin
 bindsym $mod+$alt+F4 exec --no-startup-id shutdown -P now
 
 # Wallpaper
-exec --no-startup-id feh --bg-center /usr/share/wallpapers/ColdRipple/contents/images/1920x1080.jpg
+#exec --no-startup-id feh --bg-center /usr/share/wallpapers/ColdRipple/contents/images/1920x1080.jpg
+
+exec --no-startup-id feh --bg-center /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
 # Icons
 exec_always --no-startup-id exec i3-workspace-names-daemon
