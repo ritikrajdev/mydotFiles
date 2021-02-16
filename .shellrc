@@ -187,11 +187,10 @@ pokemon()
 alias pyma="python manage.py"
 
 # Sway Configuration
-sway()
+alias sway=sway_wayland
+sway_wayland()
 {
-	export XDG_CURRENT_DESKTOP=sway
-	export MOZ_ENABLE_WAYLAND=1
-
-	sway
+	bash ~/.config/sway/set_env.sh
+	/usr/bin/sway
 }
 
