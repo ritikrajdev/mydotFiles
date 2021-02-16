@@ -248,3 +248,6 @@ bindsym ctrl+$mod+Left workspace prev
 bindsym $mod+$alt+Right move window to workspace next
 bindsym $mod+$alt+Left move window to workspace left
 
+# Shutdown
+bindsym $mod+$alt+F4 exec --no-startup-id shutdown -P now
+
