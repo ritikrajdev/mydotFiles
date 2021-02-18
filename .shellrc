@@ -190,7 +190,7 @@ alias pyma="python manage.py"
 alias sway=sway_wayland
 sway_wayland()
 {
-	$SHELL ~/.config/sway/set_env.sh
+	source ~/.config/sway/set_env.sh
 	/usr/bin/sway
 }
 
