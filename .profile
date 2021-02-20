@@ -6,5 +6,4 @@ export PATH="$PATH:/home/ritik/.emacs.d/bin"
 
 # EDITOR
 export EDITOR=nvim
-export PAGER=bat
 
