@@ -208,11 +208,6 @@ bar {
 
 include /etc/sway/config.d/*
 
-
-# ENABLE WAYLAND FIREFOX
-exec export MOZ_ENABLE_WAYLAND=1
-exec export GDK_BACKEND=wayland
-
 # Border none
 default_border none
 
