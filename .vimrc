@@ -21,6 +21,9 @@ call plug#begin('~/.vim/plugged')
 	" Vim Comments
 	Plug 'tpope/vim-commentary'
 
+	"Dart Vim Plugin
+	Plug 'dart-lang/dart-vim-plugin'
+
 call plug#end()
 
 set tabstop=4 shiftwidth=4 relativenumber number

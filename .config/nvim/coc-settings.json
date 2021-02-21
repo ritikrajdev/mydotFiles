@@ -1,5 +1,7 @@
 {
 	"emmet.includeLanguages": {
 		"htmldjango": "html"
-	}
+	},
+
+	"coc.preferences.formatOnSaveFiletypes": ["dart"]
 }
