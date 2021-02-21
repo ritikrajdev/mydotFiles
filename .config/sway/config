@@ -25,7 +25,7 @@ set $menu wofi --gtk-dark --show drun | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/.local/share/backgrounds/custom/ghosts.jpg fill
 #
 # Example configuration:
 #
@@ -235,4 +235,7 @@ bindsym $mod+$alt+Left move window to workspace left
 
 # Shutdown
 bindsym $mod+$alt+F4 exec --no-startup-id shutdown -P now
+
+# Libinput
+exec --no-startup-id libinput-gestures-setup start
 
