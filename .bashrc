@@ -14,6 +14,6 @@ HISTFILESIZE=5000000
 # Sourcing actual Shell file !!
 source $HOME/.shellrc
 
-# Bash Auto COmpletions
+# Bash Auto Completions
 source /usr/share/bash-completion/bash_completion
 
