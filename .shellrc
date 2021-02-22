@@ -54,9 +54,6 @@ alias tree="exa --tree"
 # Grep to RipGrep
 alias grep="rg"
 
-# Alias for man bat-extras-git
-alias man="batman"
-
 # Alias for valgrind
 alias valgrindl='valgrind --track-origins=yes --leak-check=full --show-leak-kinds=all -s'
 
@@ -201,3 +198,4 @@ set_wayland()
 # Flutter Path
 export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$HOME/Android/Sdk/platform-tools"
+export PATH="$PATH:$HOME/Android/Sdk/tools"

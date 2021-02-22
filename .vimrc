@@ -24,6 +24,9 @@ call plug#begin('~/.vim/plugged')
 	"Dart Vim Plugin
 	Plug 'dart-lang/dart-vim-plugin'
 
+	"Jsonc vim syntax highlighting
+	Plug 'kevinoid/vim-jsonc'
+
 call plug#end()
 
 set tabstop=4 shiftwidth=4 relativenumber number
