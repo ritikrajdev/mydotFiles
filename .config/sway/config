@@ -66,6 +66,7 @@ input "1267:12525:ELAN0710:01_04F3:30ED_Touchpad" {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod+t exec $term
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -239,4 +240,11 @@ bindsym $mod+$alt+F4 exec --no-startup-id shutdown -P now
 
 # Libinput
 exec --no-startup-id libinput-gestures-setup start
+
+# Firefox Sharing Indicator
+for_window [app_id="firefox" title="Firefox Developer Edition — Sharing Indicator"] {
+	floating enable
+	border none
+	move position 950 -35
+}
 
