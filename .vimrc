@@ -21,10 +21,10 @@ call plug#begin('~/.vim/plugged')
 	" Vim Comments
 	Plug 'tpope/vim-commentary'
 
-	"Dart Vim Plugin
+	" Dart Vim Plugin
 	Plug 'dart-lang/dart-vim-plugin'
 
-	"Jsonc vim syntax highlighting
+	" Jsonc vim syntax highlighting
 	Plug 'kevinoid/vim-jsonc'
 
 call plug#end()
