@@ -195,10 +195,3 @@ set_wayland()
 	source ~/.config/wayland/set_env.sh
 }
 
-# Flutter Path
-export PATH="$PATH:$HOME/Development/flutter/bin"
-
-# Android Path
-export PATH="$PATH:$HOME/Development/Android/Sdk/platform-tools"
-export PATH="$PATH:$HOME/Development/Android/Sdk/tools"
-
