@@ -1,5 +1,9 @@
 
-source $HOME/.shellrc
+# Sourcing shell files
+for file in ~/.shell/POSIX/*
+do
+	source $file
+done
 
 ## My Color Setup From Here !!
 
@@ -103,4 +107,4 @@ rehash_precmd() {
 
 add-zsh-hook -Uz precmd rehash_precmd
 ## End of lines added by compinstall
-#
+

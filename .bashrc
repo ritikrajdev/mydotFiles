@@ -11,9 +11,12 @@ shopt -s histappend
 HISTSIZE=500000
 HISTFILESIZE=5000000
 
-# Sourcing actual Shell file !!
-source $HOME/.shellrc
-
 # Bash Auto Completions
 source /usr/share/bash-completion/bash_completion
+
+# Sourcing shell files
+for file in ~/.shell/POSIX/*
+do
+	source $file
+done
 
