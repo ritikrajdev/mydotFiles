@@ -8,6 +8,7 @@ shopt -s histappend
 HISTSIZE=500000
 HISTFILESIZE=5000000
 
+# requirements: bash-completion
 source /usr/share/bash-completion/bash_completion
 
 # Sourcing shell files
