@@ -248,3 +248,5 @@ for_window [app_id="firefox" title="Firefox Developer Edition — Sharing Indica
 	move position 950 -35
 }
 
+bindsym Print exec grim -g "$(slurp)" - | swappy -f -
+
