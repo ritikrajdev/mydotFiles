@@ -12,3 +12,4 @@ alias pyma="python manage.py"
 alias ssh="kitty +kitten ssh"
 alias kdiff="kitty +kitten diff"
 alias icat="kitty +kitten icat"
+

@@ -1,5 +1,5 @@
 # fzf Search (cd or open up a file)
-ff()
+function ff()
 {
 	local result_dir=$(fzf -q "$1")
 	if [ -f "$result_dir" ]

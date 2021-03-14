@@ -1,4 +1,6 @@
-pokemon()
+﻿# Pokemon function
+
+function pokemon()
 {
 	set -e
 
