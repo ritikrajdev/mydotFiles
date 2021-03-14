@@ -10,7 +10,7 @@ install() {
 
 	local current_directory=$(dirname $(realpath $0))
 
-	ln -s${ask_permission} 	${current_directory}/.*rc			~/
+	ln -s${ask_permission} 	${current_directory}/.*rc		~/
 	ln -s${ask_permission} 	${current_directory}/.*profile		~/
 	ln -s${ask_permission} 	${current_directory}/.gitconfig		~/
 	ln -s${ask_permission} 	${current_directory}/.shell 		~/
