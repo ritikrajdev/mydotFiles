@@ -1,7 +1,5 @@
 ﻿function pokemon()
 {
-	set -e
-
 	# Do not End with trailing /
 	local pokemon_directory="$HOME/Pictures/Pokemon"
 	local file_prefix="Pokemon"
@@ -52,3 +50,4 @@
 	return 0
 }
 
+pokemon
