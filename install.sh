@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main() {
+install() {
 	local ask_permission="i"
 
 	if [ "$1" = "-y" ]
@@ -16,6 +16,7 @@ main() {
 	ln -s${ask_permission} 	${current_directory}/.shell 		~/
 	ln -s${ask_permission} 	${current_directory}/.ssh/config	~/.ssh/
 
+	mkdir -p ~/.local/share/backgrounds/custom
 	ln -s${ask_permission} 	${current_directory}/.local/share/backgrounds/custom/ghosts.jpg	~/.local/share/backgrounds/custom/
 
 	for config in .config/*
@@ -24,5 +25,5 @@ main() {
 	done
 }
 
-main $1
+install $1
 

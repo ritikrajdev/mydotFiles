@@ -1,7 +1,12 @@
 # mydotFiles
-Welcome to the Repo of My Dot Files Reader.
+Dotfiles for all my machines.
 
-In this repo i save my dotfiles. Wanna have a look at them ?
+## Installation Instructions
 
-Have a look at my .bashrc or .zshrc and my .shell folder
+```bash
+git clone https://github.com/ritikrajdev/mydotFiles.git ~/.dotfiles
+ .dotfiles
+~/.dotfiles/install.sh
+```
 
+> :warning: It will **delete** or **replace** the current dotfiles/configs.
