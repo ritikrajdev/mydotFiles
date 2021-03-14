@@ -1,0 +1,8 @@
+[user]
+	email = ritikrajdev761@gmail.com
+	name = ritikrajdev
+	signingkey = 8F0E22C9FDDDFFDB
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main

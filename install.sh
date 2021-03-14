@@ -6,8 +6,9 @@ main() {
 
 	echo $current_directory
 
-	ln -si 	${current_directory}/.*rc		~/
+	ln -si 	${current_directory}/.*rc			~/
 	ln -si 	${current_directory}/.*profile		~/
+	ln -si 	${current_directory}/.gitconfig		~/
 	ln -si 	${current_directory}/.shell 		~/
 	ln -si 	${current_directory}/.ssh/config	~/.ssh/
 
