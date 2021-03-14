@@ -1,3 +1,5 @@
+" Requirements -> vim-plug or neovim-plug
+
 call plug#begin('~/.vim/plugged')
 
 	" Plugin Main COC for lanuage
@@ -33,4 +35,23 @@ set tabstop=4 shiftwidth=4 relativenumber number
 
 " Auto Start show Color for Colorizer Plugin
 let g:colorizer_auto_color=1
+
+let g:coc_global_extensions = [
+			\"coc-clangd",
+			\"coc-css",
+			\"coc-discord-neovim",
+			\"coc-emmet",
+			\"coc-flutter",
+			\"coc-git",
+			\"coc-html",
+			\"coc-java",
+			\"coc-json",
+			\"coc-omnisharp",
+			\"coc-pairs",
+			\"coc-pyright",
+			\"coc-rls",
+			\"coc-sh",
+			\"coc-tsserver",
+			\"coc-yaml"
+\] 
 
