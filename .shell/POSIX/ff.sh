@@ -1,7 +1,7 @@
-# Skim Search (cd or open up a file)
-skim()
+# fzf Search (cd or open up a file)
+ff()
 {
-	local result_dir=$(sk -q "$1")
+	local result_dir=$(fzf -q "$1")
 	if [ -f "$result_dir" ]
 	then
 		rifle -c "$HOME/.config/ranger/rifle.conf" "$result_dir"
