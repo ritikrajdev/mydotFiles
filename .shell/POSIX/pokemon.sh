@@ -1,4 +1,4 @@
-﻿function pokemon()
+function pokemon()
 {
 	# Do not End with trailing /
 	local pokemon_directory="$HOME/Pictures/Pokemon"
@@ -50,4 +50,4 @@
 	return 0
 }
 
-pokemon
+# pokemon
