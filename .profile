@@ -14,4 +14,5 @@ export EDITOR=nvim
 # FZF
 export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git --exclude .dartServer --exclude '*cache' --exclude .gradle"
 export FZF_DEFAULT_OPTS="--exact --border"
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 
