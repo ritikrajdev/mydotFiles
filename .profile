@@ -10,5 +10,8 @@ export PATH="$PATH:$HOME/Development/Android/Sdk/tools"
 export CHROME_EXECUTABLE="/usr/bin/chromium"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export EDITOR=nvim
-export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git/"
+
+# FZF
+export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git --exclude .dartServer --exclude '*cache' --exclude .gradle"
+export FZF_DEFAULT_OPTS="--exact --border"
 

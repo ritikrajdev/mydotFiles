@@ -1,3 +1,53 @@
+########################################################################################################################
+#
+# .zshrc Prewritten
+#
+########################################################################################################################
+
+
+## Lines configured by zsh-newuser-install
+HISTFILE=~/.zsh_history
+HISTSIZE=500000
+SAVEHIST=500000
+bindkey -e
+
+## Lines for forward and Backward word
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
+## End of lines configured by zsh-newuser-install
+## The following lines were added by compinstall
+zstyle :compinstall filename '~/.zshrc'
+
+## AutoCd
+setopt autocd
+
+## Prompt Styles !!
+# autoload -Uz promptinit
+# promptinit
+# prompt redhat
+
+
+autoload -Uz compinit
+compinit
+
+## Pacman Hook for compinit on installation or update
+zshcache_time="$(date +%s%N)"
+
+autoload -Uz add-zsh-hook
+
+rehash_precmd() {
+  if [[ -a /var/cache/zsh/pacman ]]; then
+    local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
+    if (( zshcache_time < paccache_time )); then
+      rehash
+      zshcache_time="$paccache_time"
+    fi
+  fi
+}
+
+add-zsh-hook -Uz precmd rehash_precmd
+## End of lines added by compinstall
 
 # Sourcing shell files
 for file in ~/.shell/POSIX/*
@@ -55,56 +105,4 @@ setopt PROMPT_SUBST
 RPROMPT="%{$fg[magenta]%}" # Color Magenta 
 RPROMPT+=\$vcs_info_msg_0_
 RPROMPT+="%{$reset_color%}" # Reset Color
-
-
-########################################################################################################################
-#
-# .zshrc Prewritten
-#
-########################################################################################################################
-
-
-## Lines configured by zsh-newuser-install
-HISTFILE=~/.zsh_history
-HISTSIZE=500000
-SAVEHIST=500000
-bindkey -e
-
-## Lines for forward and Backward word
-bindkey '^[[1;5D' backward-word
-bindkey '^[[1;5C' forward-word
-
-## End of lines configured by zsh-newuser-install
-## The following lines were added by compinstall
-zstyle :compinstall filename '~/.zshrc'
-
-## AutoCd
-setopt autocd
-
-## Prompt Styles !!
-# autoload -Uz promptinit
-# promptinit
-# prompt redhat
-
-
-autoload -Uz compinit
-compinit
-
-## Pacman Hook for compinit on installation or update
-zshcache_time="$(date +%s%N)"
-
-autoload -Uz add-zsh-hook
-
-rehash_precmd() {
-  if [[ -a /var/cache/zsh/pacman ]]; then
-    local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
-    if (( zshcache_time < paccache_time )); then
-      rehash
-      zshcache_time="$paccache_time"
-    fi
-  fi
-}
-
-add-zsh-hook -Uz precmd rehash_precmd
-## End of lines added by compinstall
 
