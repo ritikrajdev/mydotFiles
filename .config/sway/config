@@ -236,17 +236,22 @@ bindsym $mod+$alt+Right move window to workspace next
 bindsym $mod+$alt+Left move window to workspace left
 
 # Shutdown
-bindsym $mod+$alt+F4 exec --no-startup-id shutdown -P now
+bindsym $mod+$alt+F4 exec shutdown -P now
 
 # Libinput
-exec --no-startup-id libinput-gestures-setup start
+exec libinput-gestures-setup start
 
 # Firefox Sharing Indicator
-for_window [app_id="firefox" title="Firefox Developer Edition — Sharing Indicator"] {
+for_window [title=".* — Sharing Indicator"] {
 	floating enable
 	border none
 	move position 950 -35
 }
 
 bindsym Print exec grim -g "$(slurp)" - | swappy -f -
+
+gaps inner 5
+
+bindsym $mod+Shift+f exec dolphin
+
 

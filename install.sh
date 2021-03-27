@@ -14,6 +14,8 @@ install() {
 	ln -s${ask_permission} 	${current_directory}/.*profile		~/
 	ln -s${ask_permission} 	${current_directory}/.gitconfig		~/
 	ln -s${ask_permission} 	${current_directory}/.shell 		~/
+
+	mkdir -p ~/.ssh
 	ln -s${ask_permission} 	${current_directory}/.ssh/config	~/.ssh/
 
 	mkdir -p ~/.local/share/backgrounds/custom

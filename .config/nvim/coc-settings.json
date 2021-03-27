@@ -3,5 +3,5 @@
 		"htmldjango": "html"
 	},
 
-	"coc.preferences.formatOnSaveFiletypes": ["dart"]
+	"coc.preferences.formatOnSaveFiletypes": ["dart", "html", "js"]
 }
