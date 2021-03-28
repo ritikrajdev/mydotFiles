@@ -25,7 +25,7 @@ set $menu wofi --gtk-dark --show drun | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/.local/share/backgrounds/custom/ghosts.jpg fill
+output * bg ~/.local/share/backgrounds/custom/wallhaven.jpg fill
 #
 # Example configuration:
 #
