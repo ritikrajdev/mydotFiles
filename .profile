@@ -9,6 +9,7 @@ export PATH="$PATH:$HOME/Development/Android/Sdk/tools"
 # General Variables
 export CHROME_EXECUTABLE="/usr/bin/chromium"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export PAGER="sh -c 'col -bx | bat -l man -p'"
 export EDITOR=nvim
 
 # FZF
