@@ -29,6 +29,9 @@ call plug#begin('~/.vim/plugged')
 	" Jsonc vim syntax highlighting
 	Plug 'kevinoid/vim-jsonc'
 
+	" For dynamic auto completions dbtext.vim
+	Plug 'vim-scripts/dbext.vim'
+
 call plug#end()
 
 set tabstop=4 shiftwidth=4 relativenumber number
