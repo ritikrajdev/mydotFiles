@@ -209,49 +209,10 @@ bar {
 }
 
 include /etc/sway/config.d/*
+include ~/.config/sway/config.d/*
 
 # Border none
 default_border none
 
-# Volume Controls
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-
-# Brightness Controls
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%
-
-# Player Controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-
-# Next and Previous Desktop Shortcuts
-bindsym ctrl+$mod+Right workspace next
-bindsym ctrl+$mod+Left workspace prev
-
-# Move window to next workspace
-bindsym $mod+$alt+Right move window to workspace next
-bindsym $mod+$alt+Left move window to workspace left
-
-# Shutdown
-bindsym $mod+$alt+F4 exec shutdown -P now
-
-# Libinput
-exec libinput-gestures-setup start
-
-# Firefox Sharing Indicator
-for_window [title=".* — Sharing Indicator"] {
-	floating enable
-	border none
-	move position 950 -35
-}
-
-bindsym Print exec grim -g "$(slurp)" - | swappy -f -
-
 gaps inner 5
-
-bindsym $mod+Shift+f exec dolphin
-
 
