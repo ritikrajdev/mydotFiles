@@ -7,3 +7,5 @@ do
 	source $file
 done
 
+eval "$(pyenv init -)"
+
