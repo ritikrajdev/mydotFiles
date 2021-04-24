@@ -32,6 +32,9 @@ call plug#begin('~/.vim/plugged')
 	" For dynamic auto completions dbtext.vim
 	Plug 'vim-scripts/dbext.vim'
 
+	" For Syntax highlighting and writing fish scripts
+	Plug 'dag/vim-fish'
+
 call plug#end()
 
 set tabstop=4 shiftwidth=4 relativenumber number
