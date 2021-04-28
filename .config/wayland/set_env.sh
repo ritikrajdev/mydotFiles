@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Enable Native Kitty and Mozilla on Wayland
 export MOZ_ENABLE_WAYLAND=1
 export KITTY_ENABLE_WAYLAND=1
