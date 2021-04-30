@@ -16,7 +16,7 @@ alias ssh="kitty +kitten ssh"
 
 abbr --add 	vim		"nvim"
 abbr --add 	grep	"rg"
-abbr --add 	g++		"g++ -std c++14 -Wall"
+abbr --add 	g++		"g++ -std=c++14 -Wall"
 abbr --add 	pyma	"python manage.py"
 
 abbr --add 	kdiff	"kitty +kitten diff"
