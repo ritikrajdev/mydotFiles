@@ -5,8 +5,13 @@ Dotfiles for all my machines.
 
 ```bash
 git clone https://github.com/ritikrajdev/mydotFiles.git ~/.dotfiles
- .dotfiles
-~/.dotfiles/install.sh
+bash ~/.dotfiles/install.sh
 ```
+
+In case You want to just go forcefully use :-
+```bash
+bash ~/.dotfiles/install.sh -y
+```
+
 
 > :warning: It will **delete** or **replace** the current dotfiles/configs.
