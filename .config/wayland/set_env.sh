@@ -1,3 +1,5 @@
+# Note: only use those commands here which can be used in Fish as well as bash/zsh
+
 # Enable Native Kitty and Mozilla on Wayland
 export MOZ_ENABLE_WAYLAND=1
 export KITTY_ENABLE_WAYLAND=1
