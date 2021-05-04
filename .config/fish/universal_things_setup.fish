@@ -16,5 +16,5 @@ set -Ux EDITOR "nvim"
 # FZF
 set -Ux FZF_DEFAULT_COMMAND "fd --exclude '*cache'"
 set -Ux FZF_DEFAULT_OPTS "--exact --border"
-set -Ux FZF_ALT_C_COMMAND "$FZF_DEFAULT_COMMAND --type d"
+set -Ux FZF_ALT_C_COMMAND "$FZF_DEFAULT_COMMAND --type d --exclude node_modules"
 
