@@ -13,5 +13,9 @@ In case You want to just go forcefully use :-
 bash ~/.dotfiles/install.sh -y
 ```
 
+* Current Shell 	-> fish
+* Current DE 		-> Sway
+* Current Terminal	-> Kitty
 
 > :warning: It will **delete** or **replace** the current dotfiles/configs.
+
