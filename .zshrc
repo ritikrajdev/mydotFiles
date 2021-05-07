@@ -50,7 +50,7 @@ add-zsh-hook -Uz precmd rehash_precmd
 ## End of lines added by compinstall
 
 # Sourcing shell files
-for file in ~/.shell/POSIX/*
+for file in ~/.config/shell/POSIX/*
 do
 	source $file
 done

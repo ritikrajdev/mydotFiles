@@ -12,7 +12,7 @@ HISTFILESIZE=5000000
 source /usr/share/bash-completion/bash_completion
 
 # Sourcing shell files
-for file in ~/.shell/POSIX/*
+for file in ~/.config/shell/POSIX/*
 do
 	source $file
 done
