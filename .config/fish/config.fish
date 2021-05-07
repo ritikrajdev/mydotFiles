@@ -1,2 +1,2 @@
-starship init fish | source
+bass source /etc/profile
 
