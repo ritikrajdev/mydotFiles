@@ -216,3 +216,5 @@ default_border none
 
 gaps inner 5
 
+exec dex -ae sway
+
