@@ -1,6 +1,11 @@
 {
 	"emmet.includeLanguages": {
-		"htmldjango": "html"
+		"htmldjango": "html",
+		"javascript": "javascriptreact"
+	},
+
+	"emmet.syntaxProfiles": {
+		"javascript": "jsx"
 	},
 
 	"coc.preferences.formatOnSaveFiletypes": ["dart", "html", "js"]
