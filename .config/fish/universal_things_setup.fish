@@ -12,6 +12,7 @@ fish_add_path ~/Development/Android/Sdk/tools
 set -Ux CHROME_EXECUTABLE "/usr/bin/chromium"
 set -Ux MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -Ux EDITOR "nvim"
+set -Ux XDG_CONFIG_HOME "$HOME/.config"
 
 # FZF
 set -Ux FZF_DEFAULT_COMMAND "fd --exclude '*cache'"
