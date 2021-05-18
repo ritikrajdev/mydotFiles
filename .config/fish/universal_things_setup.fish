@@ -13,6 +13,7 @@ set -Ux CHROME_EXECUTABLE "/usr/bin/chromium"
 set -Ux MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -Ux EDITOR "nvim"
 set -Ux XDG_CONFIG_HOME "$HOME/.config"
+set -Ux JAVA_HOME "/usr/lib/jvm/java-8-openjdk/jre/"
 
 # FZF
 set -Ux FZF_DEFAULT_COMMAND "fd --exclude '*cache'"
