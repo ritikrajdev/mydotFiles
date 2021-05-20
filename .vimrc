@@ -39,6 +39,13 @@ call plug#end()
 
 set tabstop=4 shiftwidth=4 relativenumber number
 
+" Remember Folds
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
+
 " Auto Start show Color for Colorizer Plugin
 let g:colorizer_auto_color=1
 
