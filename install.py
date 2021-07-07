@@ -2,7 +2,7 @@
 
 from copy import deepcopy
 from enum import Enum
-from os import environ
+from os import environ, system
 from pathlib import Path
 
 
@@ -61,6 +61,9 @@ def main():
         for source in (DOTFILES_DIR / source_dir).iterdir():
             dest = dest_dir / source.name
             link_with_backup(source, dest)
+
+    if 'fish' in get_env_variable('SHELL', ''):
+        system((DOTFILES_DIR / '.config/fish/universal_things_setup.fish').absolute())
 
 if __name__ == '__main__':
     main()
