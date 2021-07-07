@@ -32,6 +32,12 @@ def link_with_backup(source: Path, dest: Path):
         else:
             break
 
+def create_dir(path: Path):
+    try:
+        path.mkdir(parents=True)
+    except FileExistsError:
+        pass
+
 def main():
     DOTFILES_DIR = Path(__file__).parent
     HOME_DIR = Path.home()
@@ -39,9 +45,9 @@ def main():
     DATA_HOME =  Path(get_env_variable('XDG_DATA_HOME', str(HOME_DIR / '.local' / 'share')))
     SSH_HOME = HOME_DIR / '.ssh'
 
-    CONFIG_HOME.mkdir(parents=True)
-    DATA_HOME.mkdir(parents=True)
-    SSH_HOME.mkdir(parents=True)
+    create_dir(CONFIG_HOME)
+    create_dir(DATA_HOME)
+    create_dir(SSH_HOME)
 
     # Home Directory Files
     for source in DOTFILES_DIR.iterdir():
