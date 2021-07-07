@@ -18,4 +18,4 @@ do
 done
 
 
-source /home/ritik/.config/broot/launcher/bash/br
+source $HOME/.config/broot/launcher/bash/br
