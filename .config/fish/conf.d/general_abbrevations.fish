@@ -10,8 +10,6 @@ alias valgrindl='valgrind --track-origins yes --leak-check full --show-leak-kind
 
 alias rr=ranger
 
-alias ssh="kitty +kitten ssh"
-
 # abbreviations
 
 abbr --add 	vim		"nvim"
@@ -19,6 +17,7 @@ abbr --add 	grep	"rg"
 abbr --add 	g++		"g++ -std=c++14 -Wall"
 abbr --add 	pyma	"python manage.py"
 
+abbr --add 	kssh	"kitty +kitten ssh"
 abbr --add 	kdiff	"kitty +kitten diff"
 abbr --add 	icat	"kitty +kitten icat"
 

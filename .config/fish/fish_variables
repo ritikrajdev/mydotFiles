@@ -5,14 +5,18 @@ SETUVAR --export EDITOR:nvim
 SETUVAR --export FZF_ALT_C_COMMAND:fd\x20\x2d\x2dexclude\x20\x27\x2acache\x27\x20\x2d\x2dtype\x20d\x20\x2d\x2dexclude\x20node_modules
 SETUVAR --export FZF_DEFAULT_COMMAND:fd\x20\x2d\x2dexclude\x20\x27\x2acache\x27
 SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dexact\x20\x2d\x2dborder
-SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d8\x2dopenjdk/jre/
+SETUVAR --export GTK_THEME:Adwaita\x3adark
+SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d11\x2dopenjdk/
 SETUVAR --export MANPAGER:sh\x20\x2dc\x20\x27col\x20\x2dbx\x20\x7c\x20bat\x20\x2dl\x20man\x20\x2dp\x27
+SETUVAR --export PYENV_ROOT:/home/ritik/\x2epyenv
+SETUVAR --export PYTHONSTARTUP:\x7e/\x2epythonrc
 SETUVAR --export XDG_CONFIG_HOME:/home/ritik/\x2econfig
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_g_2B_2B_:g\x2b\x2b\x20\x2dstd\x3dc\x2b\x2b14\x20\x2dWall
 SETUVAR _fish_abbr_grep:rg
 SETUVAR _fish_abbr_icat:kitty\x20\x2bkitten\x20icat
 SETUVAR _fish_abbr_kdiff:kitty\x20\x2bkitten\x20diff
+SETUVAR _fish_abbr_kssh:kitty\x20\x2bkitten\x20ssh
 SETUVAR _fish_abbr_pyma:python\x20manage\x2epy
 SETUVAR _fish_abbr_vim:nvim
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
@@ -42,4 +46,4 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/ritik/\x2elocal/bin
+SETUVAR fish_user_paths:/home/ritik/\x2epyenv/shims\x1e/home/ritik/\x2elocal/bin

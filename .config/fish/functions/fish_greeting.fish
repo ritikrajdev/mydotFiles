@@ -1,4 +1,5 @@
 function fish_greeting
-	pokemon
+	if test -e ~/todo.md
+		mdcat ~/todo.md
+	end
 end
-
