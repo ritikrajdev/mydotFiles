@@ -17,3 +17,5 @@ do
 	source $file
 done
 
+
+source /home/ritik/.config/broot/launcher/bash/br

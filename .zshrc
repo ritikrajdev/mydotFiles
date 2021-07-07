@@ -57,6 +57,7 @@ done
 
 ## My Color Setup From Here !!
 
+prompt off
 autoload -U colors && colors
 
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -106,3 +107,5 @@ RPROMPT="%{$fg[magenta]%}" # Color Magenta
 RPROMPT+=\$vcs_info_msg_0_
 RPROMPT+="%{$reset_color%}" # Reset Color
 
+
+source /home/ritik/.config/broot/launcher/bash/br
