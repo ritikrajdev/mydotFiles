@@ -18,14 +18,16 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 # Your preferred application launcher
+
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show drun -iqIm --gtk-dark | xargs swaymsg exec -- 
+#set $menu wofi --show drun -iqIm --gtk-dark | xargs swaymsg exec -- 
+set $menu wofi --show drun -iqIm --gtk-dark
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/.local/share/backgrounds/custom/wallhaven.jpg fill
+output * bg ~/.local/share/backgrounds/current.* fill
 #
 # Example configuration:
 #
@@ -50,12 +52,18 @@ output * bg ~/.local/share/backgrounds/custom/wallhaven.jpg fill
 #
 # Example configuration:
 #
+
+input * xkb_layout "us"
+
 input "1267:12525:ELAN0710:01_04F3:30ED_Touchpad" {
     dwt enabled
     tap enabled
     natural_scroll enabled
     middle_emulation enabled
 }
+
+input "1:1:AT_Translated_Set_2_keyboard" xkb_model "hpzt11xx"
+
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
