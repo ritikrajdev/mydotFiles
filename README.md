@@ -6,10 +6,11 @@ Dotfiles for all my machines.
 ```bash
 git clone https://github.com/ritikrajdev/mydotFiles.git ~/.dotfiles
 ```
+Now create a symlink or copy files according to your needs in the corresponding directories.
 
-* Current Shell 	-> fish
-* Current DE 		-> Sway
-* Current Terminal	-> Kitty
+## Currently Using
 
-> :warning: It will **delete** or **replace** the current dotfiles/configs.
+* Shell		-> [fish](https://github.com/fish-shell/fish-shell)
+* DE/WM		-> [Sway](https://github.com/swaywm/sway)
+* Terminal	-> [Kitty](https://github.com/kovidgoyal/kitty)
 
