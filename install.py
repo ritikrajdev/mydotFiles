@@ -100,7 +100,7 @@ def main():
         print(f'{Color.green.value} Please Install them all{Color.normal.value}')
 
     if Path('/bin/fish').exists():
-        exec_with_exception(str(DOTFILES_DIR / '.config/fish/universal_things_setup.fish'))
+        system(str(DOTFILES_DIR / '.config/fish/universal_things_setup.fish'))
 
 if __name__ == '__main__':
     main()
