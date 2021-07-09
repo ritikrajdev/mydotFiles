@@ -58,7 +58,7 @@ def main():
     CONFIG_HOME =  Path(get_env_variable('XDG_CONFIG_HOME', str(HOME_DIR /'.config')))
     DATA_HOME =  Path(get_env_variable('XDG_DATA_HOME', str(HOME_DIR / '.local' / 'share')))
     SSH_HOME = HOME_DIR / '.ssh'
-    TOOLS = ['ranger', 'broot', 'zoxide-bin', 'pyenv', 'exa', 'kitty', 'openssh', 'gnupg', 'mdcat', 'neovim', 'neovim-plug']
+    TOOLS = ['ranger', 'broot', 'zoxide-bin', 'pyenv', 'exa', 'kitty', 'openssh', 'gnupg', 'mdcat', 'neovim', 'neovim-plug', 'ripgrep']
 
     create_dir(CONFIG_HOME)
     create_dir(DATA_HOME)
