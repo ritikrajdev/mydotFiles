@@ -2,7 +2,7 @@
 
 from copy import deepcopy
 from enum import Enum
-from os import environ, path, system
+from os import environ, system
 from pathlib import Path
 
 
@@ -42,8 +42,12 @@ def create_dir(path: Path):
 class NonZeroReturnCodeError(Exception):
     pass
 
+class OSNotArch(Exception):
+    pass
+
 
 def exec_with_exception(command: str):
+    print(f'executing "{Color.green.value}{command}{Color.normal.value}"')
     exit_code = system(command)
     if exit_code != 0:
         raise NonZeroReturnCodeError
@@ -91,9 +95,9 @@ def main():
             print(f'{Color.green.value}Installed{Color.normal.value} base-devel, git, paru, {", ".join(TOOLS)}')
 
         else:
-            raise SystemError
+            raise OSNotArch
 
-    except (SystemError, NonZeroReturnCodeError):
+    except:
         print('the following packages couldn\'t be installed')
         print(f'{Color.red.value}{" ".join(TOOLS)}{Color.normal.value}')
         print(f'{Color.green.value} Please Install them all{Color.normal.value}')
