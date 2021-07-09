@@ -102,6 +102,9 @@ def main():
     if Path('/bin/fish').exists():
         system(str(DOTFILES_DIR / '.config/fish/universal_things_setup.fish'))
 
+    if Path('/bin/broot').exists():
+        system('broot init')
+
 if __name__ == '__main__':
     main()
 
