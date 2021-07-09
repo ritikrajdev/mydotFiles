@@ -5,8 +5,8 @@ Dotfiles for all my machines.
 
 ```bash
 git clone https://github.com/ritikrajdev/mydotFiles.git ~/.dotfiles
+python ~/.dotfiles/install.py
 ```
-Now create a symlink or copy files according to your needs in the corresponding directories.
 
 ## Currently Using
 
