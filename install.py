@@ -58,7 +58,7 @@ def main():
     CONFIG_HOME =  Path(get_env_variable('XDG_CONFIG_HOME', str(HOME_DIR /'.config')))
     DATA_HOME =  Path(get_env_variable('XDG_DATA_HOME', str(HOME_DIR / '.local' / 'share')))
     SSH_HOME = HOME_DIR / '.ssh'
-    TOOLS = ['ranger', 'broot', 'zoxide-bin', 'pyenv', 'exa', 'kitty', 'openssh', 'gnupg', 'mdcat', 'neovim', 'neovim-plug', 'ripgrep']
+    TOOLS = ['ranger', 'broot', 'zoxide-bin', 'pyenv', 'exa', 'kitty', 'openssh', 'gnupg', 'mdcat', 'neovim', 'neovim-plug', 'ripgrep', 'fish']
 
     create_dir(CONFIG_HOME)
     create_dir(DATA_HOME)
@@ -76,9 +76,6 @@ def main():
         for source in (DOTFILES_DIR / source_dir).iterdir():
             dest = dest_dir / source.name
             link_with_backup(source, dest)
-
-    if 'fish' in get_env_variable('SHELL', ''):
-        system((DOTFILES_DIR / '.config/fish/universal_things_setup.fish').absolute())
 
     try:
         if Path('/bin/pacman').exists():
@@ -101,6 +98,9 @@ def main():
         print('the following packages couldn\'t be installed')
         print(f'{Color.red.value}{" ".join(TOOLS)}{Color.normal.value}')
         print(f'{Color.green.value} Please Install them all{Color.normal.value}')
+
+    if Path('/bin/fish').exists():
+        exec_with_exception(str(DOTFILES_DIR / '.config/fish/universal_things_setup.fish'))
 
 if __name__ == '__main__':
     main()
