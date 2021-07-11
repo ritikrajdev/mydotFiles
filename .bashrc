@@ -17,5 +17,3 @@ do
 	source $file
 done
 
-
-source $HOME/.config/broot/launcher/bash/br

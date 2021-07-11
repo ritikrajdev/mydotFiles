@@ -107,5 +107,3 @@ RPROMPT="%{$fg[magenta]%}" # Color Magenta
 RPROMPT+=\$vcs_info_msg_0_
 RPROMPT+="%{$reset_color%}" # Reset Color
 
-
-source $HOME/.config/broot/launcher/bash/br
