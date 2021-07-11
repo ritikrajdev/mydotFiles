@@ -8,10 +8,15 @@ fish_add_path ~/Development/Android/Sdk/platform-tools
 fish_add_path ~/Development/Android/Sdk/tools
 
 # General Variables
-set -Ux CHROME_EXECUTABLE "/usr/bin/chromium"
 set -Ux MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -Ux EDITOR "nvim"
 set -Ux XDG_CONFIG_HOME "$HOME/.config"
+set -Ux DIFFPROG 'nvim -d'
+
+# Chromium
+set -Ux CHROME_EXECUTABLE "/usr/bin/chromium"
+
+# Java
 set -Ux JAVA_HOME "/usr/lib/jvm/java-11-openjdk/"
 
 # FZF
