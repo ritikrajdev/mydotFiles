@@ -35,6 +35,13 @@ call plug#begin('~/.vim/plugged')
 	" For Syntax highlighting and writing fish scripts
 	Plug 'dag/vim-fish'
 
+	" For toml syntax highlight
+	Plug 'cespare/vim-toml'
+
+	" Vim Pollen Plugin
+	Plug 'wlangstroth/vim-racket'
+	Plug 'otherjoel/vim-pollen'
+
 call plug#end()
 
 set tabstop=4 shiftwidth=4 relativenumber number
@@ -65,6 +72,7 @@ let g:coc_global_extensions = [
 			\"coc-rls",
 			\"coc-sh",
 			\"coc-tsserver",
-			\"coc-yaml"
+			\"coc-yaml",
+			\"coc-toml"
 \] 
 
