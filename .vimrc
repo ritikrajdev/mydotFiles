@@ -42,6 +42,9 @@ call plug#begin('~/.vim/plugged')
 	Plug 'wlangstroth/vim-racket'
 	Plug 'otherjoel/vim-pollen'
 
+	" Execute Scripts
+	Plug 'EvanQuan/vim-executioner'
+
 call plug#end()
 
 set tabstop=4 shiftwidth=4 relativenumber number
@@ -52,6 +55,9 @@ augroup remember_folds
   autocmd BufWinLeave * mkview
   autocmd BufWinEnter * silent! loadview
 augroup END
+
+" Map ee to Executioner
+noremap ee :Executioner<Enter>
 
 " Auto Start show Color for Colorizer Plugin
 let g:colorizer_auto_color=1
