@@ -14,7 +14,7 @@ alias rr=ranger
 
 abbr --add 	vim		"nvim"
 abbr --add 	grep	"rg"
-abbr --add 	g++		"g++ -std=c++14 -Wall"
+abbr --add 	g++		"g++ -std=c++17 -Wall"
 abbr --add 	pyma	"python manage.py"
 
 abbr --add 	kssh	"kitty +kitten ssh"
