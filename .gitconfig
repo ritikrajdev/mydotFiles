@@ -1,7 +1,7 @@
 [user]
 	email = ritikrajdev761@gmail.com
 	name = ritikrajdev
-	signingkey = 8F0E22C9FDDDFFDB
+	signingkey = 227CF0E9CE0C4BCC
 [commit]
 	gpgsign = true
 [init]
