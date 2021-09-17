@@ -17,7 +17,7 @@ set -Ux DIFFPROG 'nvim -d'
 set -Ux CHROME_EXECUTABLE "/usr/bin/chromium"
 
 # Java
-set -Ux JAVA_HOME "/usr/lib/jvm/java-11-openjdk/"
+set -Ux JAVA_HOME "/usr/lib/jvm/java-8-openjdk"
 
 # FZF
 set -Ux FZF_DEFAULT_COMMAND "fd --exclude '*cache'"
