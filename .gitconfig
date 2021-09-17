@@ -10,3 +10,8 @@
 	ui = auto
 	branch = auto
 	status = auto
+[sendemail]
+	smtpserver = smtp.googlemail.com
+	smtpencryption = tls
+	smtpserverport = 587
+	smtpuser = ritikrajdev761@gmail.com
