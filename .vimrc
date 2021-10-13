@@ -35,15 +35,15 @@ call plug#begin('~/.vim/plugged')
 	" For Syntax highlighting and writing fish scripts
 	Plug 'dag/vim-fish'
 
-	" For toml syntax highlight
-	Plug 'cespare/vim-toml'
-
 	" Vim Pollen Plugin
 	Plug 'wlangstroth/vim-racket'
 	Plug 'otherjoel/vim-pollen'
 
 	" Execute Scripts
 	Plug 'EvanQuan/vim-executioner'
+	
+	" Markdown Preview
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 call plug#end()
 
@@ -112,4 +112,17 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+
+" Tab Complete
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 
