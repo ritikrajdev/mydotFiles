@@ -8,5 +8,6 @@
 		"javascript": "jsx"
 	},
 
-	"coc.preferences.formatOnSaveFiletypes": ["dart", "html", "js"]
+	"coc.preferences.formatOnSaveFiletypes": ["dart", "html", "js"],
+	"flutter.sdk.searchPaths": ["/opt/flutter"]
 }
