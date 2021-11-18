@@ -58,6 +58,7 @@ augroup END
 
 " Map ee to Executioner
 noremap ee :Executioner<Enter>
+noremap <leader>pp :Prettier<Enter>
 
 " Auto Start show Color for Colorizer Plugin
 let g:colorizer_auto_color=1
@@ -112,17 +113,4 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
-
-" Tab Complete
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
 
