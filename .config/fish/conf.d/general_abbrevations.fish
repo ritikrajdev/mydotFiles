@@ -10,6 +10,9 @@ alias valgrindl='valgrind --track-origins yes --leak-check full --show-leak-kind
 
 alias rr=ranger
 
+# git diff kitty
+alias gdk='git difftool --no-symlinks --dir-diff'
+
 # abbreviations
 
 abbr --add 	vim		"nvim"
