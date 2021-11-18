@@ -226,4 +226,6 @@ default_border none
 gaps inner 5
 
 exec dex -ae sway
+exec nwg-wrapper -a start -p left -mt 10 -ml 10 -t /home/ritik/todo.md
+
 
