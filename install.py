@@ -58,13 +58,11 @@ def main():
     CONFIG_HOME =  Path(get_env_variable('XDG_CONFIG_HOME', str(HOME_DIR /'.config')))
     DATA_HOME =  Path(get_env_variable('XDG_DATA_HOME', str(HOME_DIR / '.local' / 'share')))
     SSH_HOME = HOME_DIR / '.ssh'
-    SUBLIME_USER = CONFIG_HOME / '.config/sublime-text/Packages/User'
     TOOLS = ['ranger', 'broot', 'zoxide-bin', 'pyenv', 'exa', 'kitty', 'openssh', 'gnupg', 'mdcat', 'neovim', 'neovim-plug', 'ripgrep', 'fish']
 
     create_dir(CONFIG_HOME)
     create_dir(DATA_HOME)
     create_dir(SSH_HOME)
-    create_dir(SUBLIME_USER)
 
     # Home Directory Files
     for source in DOTFILES_DIR.iterdir():
@@ -73,7 +71,7 @@ def main():
             link_with_backup(source, dest)
 
     # Config, local/share, ssh
-    corresponding_dirs = {'.config': CONFIG_HOME, '.local/share': DATA_HOME, '.ssh': SSH_HOME, '.config/sublime-text/Packages/User': SUBLIME_USER}
+    corresponding_dirs = {'.config': CONFIG_HOME, '.local/share': DATA_HOME, '.ssh': SSH_HOME}
     for source_dir, dest_dir in corresponding_dirs.items():
         for source in (DOTFILES_DIR / source_dir).iterdir():
             dest = dest_dir / source.name
