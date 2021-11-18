@@ -10,9 +10,6 @@ alias valgrindl='valgrind --track-origins yes --leak-check full --show-leak-kind
 
 alias rr=ranger
 
-# git diff kitty
-alias gdk='git difftool --no-symlinks --dir-diff'
-
 # abbreviations
 
 abbr --add 	vim		"nvim"
@@ -23,4 +20,6 @@ abbr --add 	pyma	"python manage.py"
 abbr --add 	kssh	"kitty +kitten ssh"
 abbr --add 	kdiff	"kitty +kitten diff"
 abbr --add 	icat	"kitty +kitten icat"
+
+abbr --add	gdk		"git difftool --no-symlinks --dir-diff" # git diff kitty
 
