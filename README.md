@@ -2,15 +2,13 @@
 Dotfiles for all my machines.
 
 ## Installation Instructions
-
+[ ] Create New Generalized Installation Script
 ```bash
 git clone https://github.com/ritikrajdev/mydotFiles.git ~/.dotfiles
-python ~/.dotfiles/install.py
 ```
 
 ## Currently Using
 
 * Shell		-> [fish](https://github.com/fish-shell/fish-shell)
-* DE/WM		-> [Sway](https://github.com/swaywm/sway)
+* DE		-> [Gnome](https://www.gnome.org/)
 * Terminal	-> [Kitty](https://github.com/kovidgoyal/kitty)
-

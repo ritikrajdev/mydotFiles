@@ -1,0 +1,42 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export DIFFPROG:nvim\x20\x2dd
+SETUVAR --export EDITOR:nvim
+SETUVAR --export FZF_ALT_C_COMMAND:fd\x20\x2d\x2dexclude\x20\x27\x2acache\x27\x20\x2d\x2dtype\x20d\x20\x2d\x2dexclude\x20node_modules
+SETUVAR --export FZF_DEFAULT_COMMAND:fd\x20\x2d\x2dexclude\x20\x27\x2acache\x27
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dexact\x20\x2d\x2dborder
+SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_g_2B_2B_:g\x2b\x2b\x20\x2dstd\x3dc\x2b\x2b17\x20\x2dWall
+SETUVAR _fish_abbr_icat:kitty\x20\x2bkitten\x20icat
+SETUVAR _fish_abbr_kdiff:kitty\x20\x2bkitten\x20diff
+SETUVAR _fish_abbr_kssh:kitty\x20\x2bkitten\x20ssh
+SETUVAR _fish_abbr_pyma:python\x20manage\x2epy
+SETUVAR _fish_abbr_rr:ranger
+SETUVAR fish_color_autosuggestion:555\x1ebrblack
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:blue
+SETUVAR fish_color_comment:red
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:green
+SETUVAR fish_color_error:brred
+SETUVAR fish_color_escape:brcyan
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:brcyan
+SETUVAR fish_color_param:cyan
+SETUVAR fish_color_quote:yellow
+SETUVAR fish_color_redirection:cyan\x1e\x2d\x2dbold
+SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d111
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:normal
+SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
+SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
