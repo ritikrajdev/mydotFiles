@@ -6,10 +6,6 @@
 	gpgsign = true
 [init]
 	defaultBranch = main
-[color]
-	ui = auto
-	branch = auto
-	status = auto
 [sendemail]
 	smtpserver = smtp.googlemail.com
 	smtpencryption = tls
