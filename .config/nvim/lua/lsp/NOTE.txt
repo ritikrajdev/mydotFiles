@@ -1,0 +1,1 @@
+Require the created lsp config to ../lsp_and_autocompletion.lua

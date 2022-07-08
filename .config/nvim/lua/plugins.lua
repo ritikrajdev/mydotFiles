@@ -9,7 +9,13 @@ require("packer").startup(function(use)
 		"saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
 		"L3MON4D3/LuaSnip", -- Snippets plugin
 	}
-	use "tpope/vim-commentary"
+	use "tpope/vim-commentary" -- Comments
+
+	use { "lewis6991/gitsigns.nvim", config = function()
+		require("gitsigns").setup()
+	end } -- Git Signs
+
+	use "jiangmiao/auto-pairs"
 end)
 
 require("treesitter")
